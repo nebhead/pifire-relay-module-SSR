@@ -1,4 +1,4 @@
-# PiFire Solid State Relay (SSR) Module PCB (v1.0.1) KiCad Files
+# PiFire Solid State Relay (SSR) Module PCB (v1.0.2) KiCad Files
 
 ![](board.jpg)
 

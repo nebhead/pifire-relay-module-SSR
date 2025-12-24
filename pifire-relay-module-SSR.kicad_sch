@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "301cc458-05df-44fb-a8b5-f616c6d72bb7")
 	(paper "A4")
 	(title_block
 		(title "PiFire Relay Module")
-		(date "2024-05-10")
-		(rev "v1.0.1")
+		(date "2025-12-24")
+		(rev "v1.0.2")
 		(company "PiFire")
 		(comment 1 "https://github.com/nebhead/pifire")
 		(comment 2 "Ben Parmeter")
@@ -15,7 +15,9 @@
 	(lib_symbols
 		(symbol "Connector:Conn_01x06_Pin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -89,45 +91,75 @@
 				)
 			)
 			(symbol "Conn_01x06_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -7.62) (xy 0.8636 -7.62)
-					)
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy 1.27 5.08) (xy 0.8636 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -151,7 +183,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -161,70 +193,40 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 0.8636 -7.493)
-					(end 0 -7.747)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
+				(polyline
+					(pts
+						(xy 1.27 -7.62) (xy 0.8636 -7.62)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -336,10 +338,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Screw_Terminal_01x04"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -416,43 +421,9 @@
 						(type background)
 					)
 				)
-				(circle
-					(center 0 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -0.5334 -4.7498) (xy 0.3302 -5.588)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+						(xy -0.5334 2.8702) (xy 0.3302 2.032)
 					)
 					(stroke
 						(width 0.1524)
@@ -476,7 +447,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.5334 2.8702) (xy 0.3302 2.032)
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
 					)
 					(stroke
 						(width 0.1524)
@@ -488,7 +459,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.3556 -4.572) (xy 0.508 -5.4102)
+						(xy -0.5334 -4.7498) (xy 0.3302 -5.588)
 					)
 					(stroke
 						(width 0.1524)
@@ -500,7 +471,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+						(xy -0.3556 3.048) (xy 0.508 2.2098)
 					)
 					(stroke
 						(width 0.1524)
@@ -524,8 +495,31 @@
 				)
 				(polyline
 					(pts
-						(xy -0.3556 3.048) (xy 0.508 2.2098)
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -4.572) (xy 0.508 -5.4102)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -546,7 +540,18 @@
 					)
 				)
 				(circle
-					(center 0 2.54)
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.08)
 					(radius 0.635)
 					(stroke
 						(width 0.1524)
@@ -629,9 +634,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Fuse"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -762,9 +770,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -883,6 +894,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "G3MB-202PDC5:G3MB-202PDC5"
 			(pin_names
@@ -978,15 +990,16 @@
 				)
 			)
 			(symbol "G3MB-202PDC5_0_0"
-				(rectangle
-					(start -7.62 -5.08)
-					(end 7.62 5.08)
+				(polyline
+					(pts
+						(xy -7.62 2.54) (xy -2.54 2.54)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
@@ -1001,9 +1014,20 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
-						(xy -7.62 2.54) (xy -2.54 2.54)
+						(xy -3.81 0.635) (xy -2.54 0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1027,7 +1051,19 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 0.635) (xy -2.54 0.635)
+						(xy -2.54 2.54) (xy -2.54 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.635) (xy -1.27 0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1063,30 +1099,6 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 0.635) (xy -1.27 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -2.54 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -2.032 2.032) (xy -1.016 2.032)
 					)
 					(stroke
@@ -1111,18 +1123,6 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -0.635) (xy -2.54 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.27 0.635) (xy -1.27 -0.635)
 					)
 					(stroke
@@ -1135,8 +1135,19 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -2.54) (xy 5.08 0)
+						(xy -1.27 -0.635) (xy -2.54 -0.635)
 					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 2.54)
+					(radius 0.254)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1147,7 +1158,19 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -2.54) (xy 5.08 -2.54)
+						(xy 4.445 0) (xy 5.715 0) (xy 5.08 1.27) (xy 4.445 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.254)
@@ -1171,61 +1194,14 @@
 				)
 				(polyline
 					(pts
-						(xy 4.445 0) (xy 5.715 0) (xy 5.08 1.27) (xy 4.445 0)
+						(xy 7.62 -2.54) (xy 5.08 -2.54)
 					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 2.54)
-					(radius 0.254)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(pin passive line
-					(at 12.7 2.54 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -2.54 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
 					)
 				)
 				(pin passive line
@@ -1264,7 +1240,44 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -1347,10 +1360,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Transistor_BJT:BC547"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1435,6 +1451,18 @@
 				)
 				(polyline
 					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
 					(stroke
@@ -1457,12 +1485,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1481,37 +1508,8 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "BC547_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 5.08)
@@ -1523,6 +1521,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1549,12 +1565,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1626,7 +1647,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1638,7 +1659,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1669,12 +1690,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1765,7 +1791,189 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 17.78 90.17)
+		(end 101.6 163.83)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0c4822e2-0f88-469a-8161-abdf9b00e6ca)
+	)
+	(rectangle
+		(start 124.46 142.24)
+		(end 166.37 167.64)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 145585ac-16ff-4a2f-a9c2-09edeec56623)
+	)
+	(rectangle
+		(start 102.87 15.24)
+		(end 186.69 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3650c5a6-3aad-47fc-b899-7c517472dac7)
+	)
+	(rectangle
+		(start 17.78 15.24)
+		(end 101.6 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 52fd1464-aca4-43eb-9149-fc81833f3846)
+	)
+	(rectangle
+		(start 180.34 106.68)
+		(end 222.25 137.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 56e06ae5-8ff9-4acd-a32a-f066b13a3a9f)
+	)
+	(rectangle
+		(start 124.46 106.68)
+		(end 166.37 137.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 580281ad-aadf-4e6d-841a-ae60b4cd6403)
+	)
+	(rectangle
+		(start 187.96 15.24)
+		(end 271.78 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8eb7aebd-eeef-4f8c-ac34-f6a2643aedca)
+	)
+	(text "Fan Relay"
+		(exclude_from_sim no)
+		(at 196.596 18.288 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0741d6d0-de31-448c-a62b-1b4251e330bb")
+	)
+	(text "Power Relay"
+		(exclude_from_sim no)
+		(at 25.654 93.726 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1ea5e255-7ff2-45f4-9c0b-b7aa8101dc4d")
+	)
+	(text "Fuses (F1-3): \n  Littelfuse 2A Slow Blow (39212000000)\n  https://www.digikey.com/en/products/detail/littelfuse-inc/39212000000/653505"
+		(exclude_from_sim no)
+		(at 17.78 176.784 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6bf341c8-1f65-499a-9e1b-90357bc448a3")
+	)
+	(text "AC Terminal Block"
+		(exclude_from_sim no)
+		(at 137.668 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "79bdd423-1167-4378-8d7a-b4a4473a1aa8")
+	)
+	(text "Auger Relay"
+		(exclude_from_sim no)
+		(at 25.146 18.034 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7b69606b-6664-4533-bb66-ce61cb9dad55")
+	)
+	(text "Relay/Fan Board Header"
+		(exclude_from_sim no)
+		(at 153.67 108.712 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "86964ea0-6232-437a-bded-ac9840453a73")
+	)
+	(text "Relays (K1-4): \n  G3MB-202P  5V 2A SSR  \n  https://www.amazon.com/dp/B082F8C1LX"
+		(exclude_from_sim no)
+		(at 17.526 169.672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+			(href "https://www.amazon.com/dp/B082F8C1LX")
+		)
+		(uuid "c6a8ebd4-45fa-46b7-9e9e-6abf890667ef")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 188.722 108.966 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "eb06540f-a3a8-4f44-8ef0-33d4db75ea52")
+	)
+	(text "Igniter Relay"
+		(exclude_from_sim no)
+		(at 110.49 18.288 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f7952d61-d47f-4dba-8da3-47f9625543dc")
 	)
 	(junction
 		(at 41.91 120.65)
@@ -2575,90 +2783,6 @@
 		)
 		(uuid "ffb56422-4c8c-4dbd-9b52-44c7e5fa436c")
 	)
-	(rectangle
-		(start 17.78 90.17)
-		(end 101.6 163.83)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0c4822e2-0f88-469a-8161-abdf9b00e6ca)
-	)
-	(rectangle
-		(start 124.46 142.24)
-		(end 166.37 167.64)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 145585ac-16ff-4a2f-a9c2-09edeec56623)
-	)
-	(rectangle
-		(start 102.87 15.24)
-		(end 186.69 88.9)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3650c5a6-3aad-47fc-b899-7c517472dac7)
-	)
-	(rectangle
-		(start 17.78 15.24)
-		(end 101.6 88.9)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 52fd1464-aca4-43eb-9149-fc81833f3846)
-	)
-	(rectangle
-		(start 180.34 106.68)
-		(end 222.25 137.16)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 56e06ae5-8ff9-4acd-a32a-f066b13a3a9f)
-	)
-	(rectangle
-		(start 124.46 106.68)
-		(end 166.37 137.16)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 580281ad-aadf-4e6d-841a-ae60b4cd6403)
-	)
-	(rectangle
-		(start 187.96 15.24)
-		(end 271.78 88.9)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 8eb7aebd-eeef-4f8c-ac34-f6a2643aedca)
-	)
 	(image
 		(at 276.86 173.99)
 		(scale 0.0668889)
@@ -2739,103 +2863,6 @@
 			"WqK1ln379m0Ske1Kqe8AK0VkmYik2wlmvbIxtjmt9Xml1Bmt9UGt9Z6hoaFfi0jFN+QB/h/ooz29"
 			"mZaouQAAAABJRU5ErkJggg=="
 		)
-	)
-	(text "Fan Relay"
-		(exclude_from_sim no)
-		(at 196.596 18.288 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0741d6d0-de31-448c-a62b-1b4251e330bb")
-	)
-	(text "Power Relay"
-		(exclude_from_sim no)
-		(at 25.654 93.726 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1ea5e255-7ff2-45f4-9c0b-b7aa8101dc4d")
-	)
-	(text "Fuses (F1-3): \n  Littelfuse 2A Slow Blow (39212000000)\n  https://www.digikey.com/en/products/detail/littelfuse-inc/39212000000/653505"
-		(exclude_from_sim no)
-		(at 17.78 176.784 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "6bf341c8-1f65-499a-9e1b-90357bc448a3")
-	)
-	(text "AC Terminal Block"
-		(exclude_from_sim no)
-		(at 137.668 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "79bdd423-1167-4378-8d7a-b4a4473a1aa8")
-	)
-	(text "Auger Relay"
-		(exclude_from_sim no)
-		(at 25.146 18.034 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7b69606b-6664-4533-bb66-ce61cb9dad55")
-	)
-	(text "Relay/Fan Board Header"
-		(exclude_from_sim no)
-		(at 153.67 108.712 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "86964ea0-6232-437a-bded-ac9840453a73")
-	)
-	(text "Relays (K1-4): \n  G3MB-202P  5V 2A SSR  \n  https://www.amazon.com/dp/B082F8C1LX"
-		(exclude_from_sim no)
-		(at 17.526 169.672 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-			(href "https://www.amazon.com/dp/B082F8C1LX")
-		)
-		(uuid "c6a8ebd4-45fa-46b7-9e9e-6abf890667ef")
-	)
-	(text "Mounting Holes"
-		(exclude_from_sim no)
-		(at 188.722 108.966 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "eb06540f-a3a8-4f44-8ef0-33d4db75ea52")
-	)
-	(text "Igniter Relay"
-		(exclude_from_sim no)
-		(at 110.49 18.288 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f7952d61-d47f-4dba-8da3-47f9625543dc")
 	)
 	(global_label "AUG"
 		(shape input)
@@ -3383,7 +3410,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "096fd3bd-8888-4a7c-b421-da7303dd1b8e")
 		(property "Reference" "R5"
 			(at 204.47 43.18 90)
@@ -3393,8 +3419,8 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
-			(at 204.47 45.72 90)
+		(property "Value" "470"
+			(at 204.724 45.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4427,7 +4453,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "470"
 			(at 34.29 116.84 90)
 			(effects
 				(font
@@ -5243,7 +5269,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "470"
 			(at 119.38 46.99 90)
 			(effects
 				(font
@@ -5379,7 +5405,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "470"
 			(at 35.56 46.99 90)
 			(effects
 				(font
@@ -5824,4 +5850,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
