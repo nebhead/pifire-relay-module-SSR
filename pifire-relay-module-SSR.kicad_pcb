@@ -8907,7 +8907,7 @@
 			)
 		)
 	)
-	(gr_text "v1.0.1 | May 2024 | Ben Parmeter"
+	(gr_text "v1.0.2 | December 2025 | Ben Parmeter"
 		(at 65 36.5 90)
 		(layer "B.SilkS")
 		(uuid "d5f75bf6-b32d-4944-8a2c-1e33a3369d90")
@@ -8919,7 +8919,7 @@
 			)
 			(justify left bottom mirror)
 		)
-		(render_cache "v1.0.1 | May 2024 | Ben Parmeter" 90
+		(render_cache "v1.0.2 | December 2025 | Ben Parmeter" 90
 			(polygon
 				(pts
 					(xy 64.796 36.852515) (xy 63.923759 36.521322) (xy 63.923759 36.6771) (xy 64.446122 36.863946)
